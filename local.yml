@@ -1,0 +1,9 @@
+# local.yml
+- hosts: localhost
+  tasks: 
+  - name: Create some file
+    ansible.builtin.lineinfile:
+      path: /tmp/somefile
+      line: "ok"
+      create: yes
+     
